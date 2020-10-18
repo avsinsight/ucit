@@ -10,7 +10,6 @@
 
 int main() {
 
-    //int rawData[] = {1,5,3,6,6,6,6,6,3,4,4,5,5,5};
     int rawData[] = {1,5,3,6,6,6,6,4,4,4,4,4,4,4,4,4,4,6,6,5,3,2,3,4,2,4,6,2,4,5,3,5,3,4,2,3,2,4,44,4,4,4,44,4,4,4,4,4,4,4,4,4,46,3,4,4,5,5,5};
     int rawDataArraySize = sizeof rawData / sizeof rawData[0];
 
@@ -30,18 +29,13 @@ int main() {
     for (int i = 0; i < rawDataArraySize; i++ ) {
         if (i != 0){
             if (rawData[i-1] == rawData[i]){
-                //printf("SAME: rawData[i-1]: %d, rawData[i]: %d\n", rawData[i-1], rawData[i]);
                 sameValueCountHolder++;
-                //printf("UPDATING: sameValueCountHolder =  %d\n", sameValueCountHolder);
             } else {
-                //printf("NOT SAME: rawData[i-1]: %d, rawData[i]: %d\n", rawData[i-1], rawData[i]);
                 if (sameValueCountHolder > biggestCount){
                     biggestCount = sameValueCountHolder;
-                    //printf("UPDATING: biggestCount =  %d\n", biggestCount);
                 }
                 sameValueCountHolder = 0;
             };
-            //printf("Element[%d] = %d, sameValueCountHolder: %d\n", i, rawData[i], sameValueCountHolder);
         }
     }
     printf("RESULT: biggestCount =  %d\n", biggestCount + 1);
