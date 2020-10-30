@@ -12,7 +12,7 @@ int getSameValueBiggestCount (int* array, int size);
 
 int main() {
 
-    int rawData[] = {1,5,3,6,6,6,6,4,4,4,4,4,4,4,4,4,4,6,6,5,3,2,3,4,2,4,6,2,4,5,3,5,3,4,2,3,2,4,44,4,4,4,44,4,4,4,4,4,4,4,4,4,46,3,4,4,5,5,5};
+    int rawData[] = {1,5,3,6,6,6,6,6,3,4,4,5,5,5};
     int rawDataArraySize = sizeof rawData / sizeof rawData[0];
 
     showArray(rawData, rawDataArraySize);
@@ -42,16 +42,17 @@ int getSameValueBiggestCount (int* array, int size){
     int biggestCount = 0;
     int sameValueCountHolder = 0;
 
-    for (int i = 1; i < size; i++ ) {
-        if (array[i-1] == array[i]){
+    for (int i = 0; i < size; i++ ) {
+        if (array[i] == array[i+1]){
             sameValueCountHolder++;
         } else {
+            sameValueCountHolder++;
             if (sameValueCountHolder > biggestCount){
                 biggestCount = sameValueCountHolder;
             }
             sameValueCountHolder = 0;
-        };
+        }
     }
 
-    return biggestCount + 1;
+    return biggestCount;
 }
