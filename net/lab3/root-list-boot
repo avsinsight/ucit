@@ -1,0 +1,16 @@
+итого 132976
+drwxr-xr-x  4 root root    12288 ноя  9  2019 .
+drwxr-xr-x 26 root root     4096 окт 22 11:39 ..
+-rw-r--r--  1 root root   217370 сен 18  2019 config-4.15.0-65-generic
+-rw-r--r--  1 root root   217370 окт  1  2019 config-4.15.0-66-generic
+drwx------  3 root root     4096 янв  1  1970 efi
+drwxr-xr-x  5 root root     4096 ноя  1  2019 grub
+-rw-r--r--  1 root root 55319357 окт 13  2019 initrd.img-4.15.0-65-generic
+-rw-r--r--  1 root root 55323631 ноя  9  2019 initrd.img-4.15.0-66-generic
+-rw-r--r--  1 root root   182704 янв 28  2016 memtest86+.bin
+-rw-r--r--  1 root root   184380 янв 28  2016 memtest86+.elf
+-rw-r--r--  1 root root   184840 янв 28  2016 memtest86+_multiboot.bin
+-rw-------  1 root root  4062077 сен 18  2019 System.map-4.15.0-65-generic
+-rw-------  1 root root  4062584 окт  1  2019 System.map-4.15.0-66-generic
+-rw-------  1 root root  8181016 сен 19  2019 vmlinuz-4.15.0-65-generic
+-rw-------  1 root root  8181656 окт  3  2019 vmlinuz-4.15.0-66-generic

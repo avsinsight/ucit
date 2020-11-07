@@ -1,0 +1,13 @@
+vmlinuz-4.15.0-66-generic
+vmlinuz-4.15.0-65-generic
+System.map-4.15.0-66-generic
+System.map-4.15.0-65-generic
+memtest86+_multiboot.bin
+memtest86+.elf
+memtest86+.bin
+initrd.img-4.15.0-66-generic
+initrd.img-4.15.0-65-generic
+grub
+efi
+config-4.15.0-66-generic
+config-4.15.0-65-generic
